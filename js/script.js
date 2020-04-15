@@ -52,12 +52,13 @@ var quotes = [
 /***
  * `getRandomQuote` function
 ***/
-function getRandomQuote(quotes) {
-  const randomQuote = Math.floor( Math.random() * 7);
-  console.log(randomQuote);
-  return randomQuote;
-  };
-  
+function getRandomQuote(quotes) { 
+  var randomNumber = Math.floor( Math.random() * 7 );
+  var getRandomQuote = quotes[randomNumber];
+  console.log(getRandomQuote);
+  return getRandomQuote;
+};
+
 
 /***  
  * `printQuote` function
