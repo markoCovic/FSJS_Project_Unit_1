@@ -48,16 +48,18 @@ var quotes = [
   }
 ];
 
-console.log(quotes);
-
 
 /***
  * `getRandomQuote` function
 ***/
+function getRandomQuote(quotes) {
+  const randomQuote = Math.floor( Math.random() * 7);
+  console.log(randomQuote);
+  return randomQuote;
+  };
+  
 
-
-
-/***
+/***  
  * `printQuote` function
 ***/
 
@@ -68,4 +70,4 @@ console.log(quotes);
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+//document.getElementById('load-quote').addEventListener("click", printQuote, false);
